@@ -11,9 +11,8 @@ public class Book {
 	public String toString() {
 		return bookID + "\t"+ title + "\t" + title_plus + "\t"   + description+ "\t" + price ;
 	}
-	public Book() {}
-	public Book(String i, String title,String title_plus, String description, double price) {
-		this.setBookID(i);
+	public Book(String id, String title,String title_plus, String description, double price) {
+		this.setBookID(id);
 		this.setTitle(title);
 		this.setTitle_plus(title_plus);
 		this.setDescription(description);

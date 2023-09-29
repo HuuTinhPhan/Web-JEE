@@ -8,7 +8,7 @@
 
 </head>
 <body>
-	<form action="BookStore"> 
+	<form action="BookStore" method="post"> 
 		Search Id Book: 
 		<input type="text" name="bookId" >
 		<input type="submit" value="Submit id"  style="background-color: pink;border: 1px solid black; color: white">

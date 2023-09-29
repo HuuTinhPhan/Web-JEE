@@ -47,9 +47,9 @@ public class OrderPage extends HttpServlet {
 			List<Item> itemsOrdered = cart.getItemsOrdered();
 			request.setAttribute("itemsOrdered", itemsOrdered);
 			if (itemsOrdered.size() == 0) {
-				address = "/WEB-INF/source/NoItem.jsp";
+				address = "NoItem.jsp";
 			} else {
-				address = "/WEB-INF/source/OrderPage.jsp";
+				address = "OrderPage.jsp";
 			}
 			RequestDispatcher dispatcher = request.getRequestDispatcher(address);
 			dispatcher.forward(request, response);
